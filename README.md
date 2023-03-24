@@ -10,6 +10,8 @@ The dataset consists of hand-drawn polygons, which were labeled into three diffe
 
 The feature extraction process involves computing the convex hull of each polygon, and then comparing this convex hull with the minimum enclosing circle, rectangle and triangle that bound the polygon. The resulting features are a set of ratios that describe the shape of the polygon, such as the ratio of the convex hull area to the bounding circle area.
 
+![Alt text](training_points.png)
+
 ## 🤖 Classification Algorithms
 
 The model uses three different classification algorithms to predict the category of unseen polygons:
