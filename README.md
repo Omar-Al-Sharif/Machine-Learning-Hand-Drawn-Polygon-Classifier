@@ -14,11 +14,12 @@ The feature extraction process involves computing the convex hull of each polygo
 
 ## 🤖 Classification Algorithms
 
-The model uses three different classification algorithms to predict the category of unseen polygons:
+The model uses four different classification algorithms - implemented from scratch - to predict the category of unseen polygons:
 
 - **Minimum Distance Classifier**: this algorithm assigns each polygon to the category with the closest average shape features in the training set.
 - **Nearest Neighbour Classifier**: this algorithm assigns each polygon to the category of the closest polygon in the training set, based on the shape features.
 - **K-Nearest Neighbour Classifier**: this algorithm assigns each polygon to the category that is most frequent among the K closest polygons in the training set, based on the shape features.
+- **Bayesian Classifier**: this algorithm uses Bayes theorem to predict the classification by calculating the probability of each category given the observed shape features and selects the category with the highest probability as the predicted category assuming that the shape features are independent and normally distributed within each category. 
 
 ## 📈 Model Evaluation
 
